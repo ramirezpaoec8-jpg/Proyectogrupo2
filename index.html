@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Industrial Villa El Salvador</title>
+    
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+             <!--<div class="product-img" style="background-image: url('imagenes/equipo/Logo\ para\ la\ empresa.png');"></div> -->
+               <a href="#" class="logo">DIGITALSTEP</a>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#mision-vision">Misión y Visión</a></li>
+                    <li><a href="#equipo">Nuestro Equipo</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cart-toggle">
+                            🛒 <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+        <h1>DigitalStep VES</h1>
+        <p>Calzado de caballeros y dama - Fusionando tradición artesanal con innovación digital</p>
+        <a href="#productos" class="btn">Ver Colección</a>
+        <a href="#nosotros" class="btn btn-secondary">Conoce Nuestra Historia</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+  <section class="products" id="productos">
+<div class="container">
+            <div class="section-title">
+                <h2>Nuestros Productos</h2>
+                <p>Descubre la variedad de productos que ofrecen nuestros comerciantes</p>
+            </div>
+            <div class="product-grid">
+
+    <!-- Zapatos Caballeros -->
+    <div class="product-card">
+        <div class="product-img" style="background-image: url('imagenes/productos/zapato4.jpg');"></div>
+        <div class="product-info">
+            <h3>Zapatos Formales Caballero</h3>
+            <p>Zapatos de vestir en cuero genuino, perfectos para ocasiones especiales.</p>
+            <div class="product-price">S/ 180.00</div>
+            <button class="add-to-cart" data-id="1" data-name="Zapatos Formales Caballero" data-price="180">Agregar al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Zapatos Dama -->
+    <div class="product-card">
+        <div class="product-img" style="background-image: url('imagenes/productos/zapatodam8.jpg');"></div>
+        <div class="product-info">
+            <h3>Zapatos de Tacón Dama</h3>
+            <p>Elegantes zapatos de tacón con diseños modernos y comfort excepcional.</p>
+            <div class="product-price">S/ 160.00</div>
+            <button class="add-to-cart" data-id="2" data-name="Zapatos de Tacón Dama" data-price="160">Agregar al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Botas -->
+    <div class="product-card">
+        <div class="product-img" style="background-image: url('imagenes/productos/zapatodam7.jpg');"></div>
+        <div class="product-info">
+            <h3>Botas de Cuero</h3>
+            <p>Botas resistentes en cuero 100% peruano, ideales para uso diario.</p>
+            <div class="product-price">S/ 220.00</div>
+            <button class="add-to-cart" data-id="3" data-name="Botas de Cuero" data-price="220">Agregar al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Zapatillas Casuales -->
+    <div class="product-card">
+        <div class="product-img" style="background-image: url('imagenes/productos/zapatilla1.jpg');"></div>
+        <div class="product-info">
+            <h3>Zapatillas Casuales</h3>
+            <p>Calzado casual unisex, combinando estilo y comfort para el día a día.</p>
+            <div class="product-price">S/ 120.00</div>
+            <button class="add-to-cart" data-id="4" data-name="Zapatillas Casuales" data-price="120">Agregar al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Sandalias -->
+    <div class="product-card">
+        <div class="product-img" style="background-image: url('imagenes/productos/sandalias2.jpeg');"></div>
+        <div class="product-info">
+            <h3>Sandalias de Dama</h3>
+            <p>Sandalias elegantes para temporada de verano, diversos diseños.</p>
+            <div class="product-price">S/ 90.00</div>
+            <button class="add-to-cart" data-id="5" data-name="Sandalias de Dama" data-price="90">Agregar al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Mocasines -->
+    <div class="product-card">
+        <div class="product-img" style="background-image: url('imagenes/productos/mocasines1.jpg');"></div>
+        <div class="product-info">
+            <h3>Mocasines Caballero</h3>
+            <p>Mocasines clásicos en cuero, perfectos para look business casual.</p>
+            <div class="product-price">S/ 150.00</div>
+            <button class="add-to-cart" data-id="6" data-name="Mocasines Caballero" data-price="150">Agregar al Carrito</button>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+     <section class="about" id="nosotros">
+    <div class="container">
+        <div class="about-content">
+            <h2>Quiénes Somos</h2>
+            <p class="intro-text">Somos un grupo de emprendedores del Parque Industrial de Villa El Salvador especializados en la fabricación de calzado para caballeros y dama. Con más de <strong>15 años de experiencia</strong> en el rubro, hemos evolucionado desde métodos tradicionales hacia procesos digitalizados que nos permiten ofrecer productos de mayor calidad.</p>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Nuestro Proceso de Digitalización</h3>
+                    <p>Hemos implementado sistemas de:</p>
+                    <ul class="features-list">
+                        <li>✅ Diseño digital de calzado</li>
+                        <li>✅ Gestión de inventario en tiempo real</li>
+                        <li>✅ Ventas online integradas</li>
+                        <li>✅ Facturación electrónica</li>
+                        <li>✅ Seguimiento de producción digital</li>
+                    </ul>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">👞</div>
+                        <h4>Especialistas en Calzado</h4>
+                        <p>Caballeros y Dama</p>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-icon">🏭</div>
+                        <h4>Parque Industrial VES</h4>
+                        <p>15+ años de experiencia</p>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-icon">💻</div>
+                        <h4>Procesos Digitalizados</h4>
+                        <p>Innovación constante</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-center">
+                <a href="#proceso" class="btn">Conoce Nuestro Proceso</a>
+            </div>
+        </div>
+    </div>
+</section>
+   
+    <!-- Sección Misión y Visión -->
+    <section class="mission-vision" id="mision-vision">
+        <div class="container">
+            <div class="section-title">
+                <h2>Misión y Visión</h2>
+            </div>
+            <div class="mv-container">
+                    <div class="mv-card">
+                    <div class="mv-icon">👞</div>
+                    <h3>Misión</h3>
+                    <p>Producir calzado de caballeros y dama de la más alta calidad, combinando técnicas artesanales tradicionales con procesos digitales innovadores. Ofrecer a nuestros clientes productos duraderos, cómodos y con diseños que reflejen nuestra identidad peruana.</p>
+                    </div>
+                    <div class="mv-card">
+                    <div class="mv-icon">🚀</div>
+                    <h3>Visión</h3>
+                    <p>Ser la marca líder de calzado peruano a nivel nacional e internacional, reconocida por nuestra calidad, innovación en procesos digitales y compromiso con el desarrollo sostenible de Villa El Salvador.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Procesos  -->
+<section class="digitalization" id="proceso">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestro Proceso de Digitalización</h2>
+            <p>Cómo transformamos la fabricación tradicional de calzado</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-icon">🎨</div>
+                <h3>Diseño Digital</h3>
+                <p>Utilizamos software especializado para crear diseños precisos y personalizados</p>
+            </div>
+
+        <div class="process-step">
+            <div class="step-icon">📱</div>
+                <h3>E-commerce Integrado</h3>
+                <p>Plataforma web responsive con carrito de compras, pasarelas de pago y seguimiento de pedidos en tiempo real</p>
+                <div class="step-features">
+                    <span>✔ Carrito inteligente</span>
+                    <span>✔ Múltiples métodos de pago</span>
+                    <span>✔ Seguimiento de envíos</span>
+                </div>
+         </div>
+
+        <div class="process-step">
+                <div class="step-icon">📊</div>
+                <h3>Gestión de Inventario</h3>
+                <p>Sistema en tiempo real que monitorea materiales y productos terminados</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-icon">🛒</div>
+                <h3>Ventas Online</h3>
+                <p>Plataforma integrada para pedidos nacionales e internacionales</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Nuestro Equipo -->
+    <section class="team" id="equipo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestro Equipo</h2>
+                <p>Conoce a los integrantes que hicieron posible este proyecto</p>
+            </div>
+            <div class="team-grid">
+                <!-- Integrante 1 -->
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('imagenes/equipo/Danny.jpeg');"></div>
+                    <div class="team-info">
+                        <h3>Danny Cristian Ferrer Suarez</h3>
+                        <!-- <p></p> aqui se puede poner alguna descripcion--> 
+                    </div>
+                </div>
+                
+                <!-- Integrante 2 -->
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('imagenes/equipo/Frann1.png');"></div>
+                    <div class="team-info">
+                        <h3>Frann Josue Vasquez Jaramillo</h3>
+                         <!-- <p></p>   aqui se puede poner alguna descripcion-->
+                    </div>
+                </div>
+                
+                <!-- Integrante 3 -->
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('imagenes/equipo/abigail.jpeg');"></div>
+                    <div class="team-info">
+                        <h3>Abigail Huaquia Gilio</h3>
+                        <!--<p></p>  aqui se puede poner alguna descripcion-->
+                    </div>
+                </div>
+                
+                <!-- Integrante 4 -->
+                <div class="team-card">
+                    <div class="team-img" style="background-image: url('imagenes/equipo/Paola\ Ramirez.jpeg');"></div>
+                    <div class="team-info">
+                        <h3>Paola Ramirez Chosec</h3>
+                        <!--<p></p>  aqui se puede poner alguna descripcion-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <section class="cart-section" id="cart">
+        <div class="cart-header">
+            <h3>Tu Carrito de Compras</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+        </div>
+        <div class="cart-total">
+            Total: S/ <span id="cart-total">0.00</span>
+        </div>
+        <button class="checkout-btn">Proceder al Pago</button>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes preguntas o necesitas más información? No dudes en contactarnos.</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Asunto" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DigitalStep</h3>
+                    <p>Conectando pequeñas empresas con el mundo a través de la innovación y la calidad.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Quiénes Somos</a></li>
+                        <li><a href="#mision-vision">Misión y Visión</a></li>
+                        <li><a href="#equipo">Nuestro Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Av. Industrial, Villa El Salvador, Lima</li>
+                        <li>📞 (01) 123-4567</li>
+                        <li>✉️ info@DigitalStep.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Parque Industrial Villa El Salvador. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+
+</body>
+</html>
